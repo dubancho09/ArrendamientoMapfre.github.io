@@ -11,6 +11,10 @@ body{
     color: #D81E04;
 }
 
+.titile-description{
+    font-size: 18px;
+}
+
 .text-secondary {
     color: #B1B1B1 !important;
 }
@@ -592,6 +596,23 @@ a{
     text-decoration: none;
 }
 
+/*Estilos para sección inquilino*/
+.card-name-header{
+    border-bottom: 1px solid #D81E04;
+}
+
+.card_price_description-body{
+    border-bottom: 1px solid #363636;
+}
+
+.card_price_description{
+    font-size: 20px;
+}
+
+.card_price{
+    font-weight: bold;
+    font-size: 28px;
+}
 
 /*Estilos footer*/
 
