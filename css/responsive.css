@@ -1,0 +1,62 @@
+@media  (max-width:768px) {
+    .navbar-desktop{
+        display: none;
+    }
+    .img-home{
+        display: none;
+    }
+
+    .initial-form{
+        width: 94%;  
+        top: 350px; 
+        /* display: none; */
+    }
+    
+    #nav-mobile{
+        display: block;
+    }
+
+
+    .bg__image-home{
+        background-image: url(../assets/img/background-hause-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: -240px;
+        font-size: 20px;
+    }
+
+    .wave{
+        display: none;
+    }
+
+
+    .form-floating {
+        margin-top: 20px;
+    }
+
+
+    .description-poliza{
+        margin-top: 580px !important;
+        
+    }
+
+    .description-poliza h4{
+        text-align: center;
+    }
+
+    .description-poliza p{
+        text-align: justify;
+    }
+
+    .advantages-mobile{
+        display: block;
+    }
+
+    .advantages-desktop{
+        display: none;
+    }
+
+    
+
+
+}

@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+
+    <title>Arrendamiento - Home</title>
+</head>
+
+<body>
+    <!-- Inicio navbar desktop -->
+    <div class="container-fluit">
+        <nav class="navbar  navbar-light colorhead navbar-desktop ">
+            <div class="container">
+                <a href="#" class="navbar__logo">
+                    <img src="./assets/icons/Mapfre-icon.png" alt="logo-mapfre">
+                </a>
+                <div class="welcome--description d-flex align-items-center justify-content-between">
+                    <p class="mt-3  welcome-page welcome-page-desktop">Cotiza sin costo y compra tu seguro ARRENDAMIENTO
+                        al instante</p>
+                    <svg class="question-icon" width="28" height="28" viewBox="0 0 28 28" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M28 14C28 17.713 26.525 21.274 23.8995 23.8995C21.274 26.525 17.713 28 14 28C10.287 28 6.72601 26.525 4.10051 23.8995C1.475 21.274 0 17.713 0 14C0 10.287 1.475 6.72601 4.10051 4.10051C6.72601 1.475 10.287 0 14 0C17.713 0 21.274 1.475 23.8995 4.10051C26.525 6.72601 28 10.287 28 14ZM9.618 10.5577H11.0618C11.3033 10.5577 11.4957 10.36 11.5273 10.1202C11.6847 8.97225 12.4722 8.13575 13.8757 8.13575C15.0763 8.13575 16.1753 8.736 16.1753 10.1797C16.1753 11.291 15.5208 11.802 14.4865 12.579C13.3088 13.4348 12.376 14.434 12.4425 16.0562L12.4478 16.436C12.4496 16.5508 12.4965 16.6603 12.5783 16.7408C12.6602 16.8214 12.7704 16.8665 12.8853 16.8665H14.3045C14.4205 16.8665 14.5318 16.8204 14.6139 16.7384C14.6959 16.6563 14.742 16.545 14.742 16.429V16.2453C14.742 14.9888 15.2198 14.623 16.5095 13.6447C17.5753 12.8345 18.6865 11.935 18.6865 10.0468C18.6865 7.4025 16.4535 6.125 14.0087 6.125C11.7915 6.125 9.3625 7.1575 9.19625 10.1255C9.19385 10.182 9.20304 10.2384 9.22326 10.2913C9.24347 10.3441 9.27427 10.3922 9.31377 10.4327C9.35328 10.4732 9.40064 10.5052 9.45296 10.5267C9.50528 10.5482 9.56144 10.5588 9.618 10.5577ZM13.6868 21.833C14.7543 21.833 15.4875 21.1435 15.4875 20.2108C15.4875 19.2447 14.7525 18.5658 13.6868 18.5658C12.6648 18.5658 11.921 19.2447 11.921 20.2108C11.921 21.1435 12.663 21.833 13.6868 21.833Z"
+                            fill="white" />
+                    </svg>
+                </div>
+
+            </div>
+        </nav>
+    </div>
+    <!-- Fin Navbar -->
+
+    <!-- Inicio navbar mobile -->
+    <div id="nav-mobile" class="container-fluit">
+        <nav class="navbar navbar-light navbar-mobile">
+            <div class="container">
+                <p class="text-center">Cotiza sin costo y compra tu seguro <b>ARRENDAMIENTO</b> al instante</p>
+            </div>
+        </nav>
+        <nav class="navbar navbar-light d-flex justify-content-between navbar-mobile-2">
+            <div class="container">
+                <img src="./assets/icons/icon-mapfre-mobile.svg">
+                <img src="./assets/icons/icon-question-mobile.svg" />
+            </div>
+        </nav>
+    </div>
+    <!-- Fin navbar mobile -->
+
+
+    <!-- Inicio header -->
+    <header id="header-home ">
+        <div class="bg__image-home">
+            
+            <!-- Modales -->
+            <div class="container mt-2">
+                <div class="d-flex justify-content-end">
+                    <span class="modal-items"
+                          data-toggle="modal" 
+                          data-target="#exampleModal">Pop Up error</span>
+                    <span class="modal-items ms-2"
+                          data-toggle="modal" 
+                          data-target="#proceso_abieto">Pop Up proceso</span>
+                </div>
+            </div>
+            <!-- Modales -->
+
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="initial-form p-4">
+                        <div class="text-center">
+                            <h2 class="text-title"><b>Cotiza fácil y al instante tu poliza de ARRENDAMIENTO</b></h2>
+                            <b>Identificación del afiliado</b>
+                            <p>¡Sabemos que eres tú, aun así, debemos validar tu información!</p>
+                        </div>
+
+                        <!-- Inicio formulario datos iniciales -->
+                        <form autocomplete="off" id="initial-form">
+                            <div class="row mt-4">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <!-- Tipo documento -->
+                                        <select id="type_document" class="form-select">
+                                            <option value="0">Tipo de documento</option>
+                                            <option value="1">CC</option>
+                                            <option value="2">TI</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group input-container">
+                                        <!-- Numero documento -->
+                                        <div class="form-floating form-floating-var mb-3">
+                                            <input type="text" class="form-control" id="document_number"
+                                                placeholder="Número de documento" required>
+                                            <label class="form-label" for="floatingInput">Número de documento</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mt-4">
+                                    <div class="form-group">
+                                        <!-- Ubicacion propiedad -->
+                                        <select class="form-select" id="location_property" type="text">
+                                            <option value="0">¿Dónde está ubicada la propiedad?</option>
+                                            <option value="1">Ejemplo aqui</option>
+                                            <option value="2">Ejemplo aqui</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mt-4">
+                                    <div class="form-group">
+                                        <!-- Tipo inmueble -->
+                                        <select class="form-select" id="type_property" type="text">
+                                            <option value="">Tipo de inmueble a asegurar</option>
+                                            <option value="1">Ejemplo aqui</option>
+                                            <option value="2">Ejemplo aqui</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mt-4">
+                                    <div class="form-group">
+                                        <!-- Terminos y condiciones -->
+                                        <div class="form-check">
+                                            <input class="form-check-input form-check-m" type="checkbox" value=""
+                                                id="terms">
+                                            <p class="form-check-label terms" for="terms">
+                                                He leído y acepto los <a href="#"><b>términos de uso</b></a>, así como
+                                                las <a href="#"><b>políticas de privacidad</b></a>, las condiciones
+                                                generales de la póliza con MAPFRE y declaro que la información
+                                                registrada es veraz y exacta.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-12 mt-1">
+                                    <div class="alert alert-warning" role="alert">
+                                        <p><b class="text-title">Nota:</b> Recuerda que el total entre el valor del
+                                            arriendo y el valor de la administración debe estar entre <b>$400.000 y
+                                                $3.000.000.</b></p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex justify-content-center">
+                                    <button id="btn_continue" class="btn button-form-initial button-success"
+                                        data-toggle="modal" 
+                                        data-target="#cod_asesor"
+                                        disabled>Continuar</button>
+                                </div>
+
+                            </div>
+                        </form>
+                        <!-- Fin formulario datos iniciales -->
+
+                    </div>
+                </div>
+                <div class="col-md-6 mt-3 description-poliza">
+                    <h4 class="text-title">¿Sabes qué es una póliza de arrendamiento?</h4>
+                    <p>El seguro de arrendamiento individual es un mecanismo de protección al patrimonio, diseñado para
+                        amparar al propietario contra el incumplimiento del pago del canon de arrendamiento, la cuota de
+                        administración ordinaria y los servicios públicos domiciliarios por parte del inquilino.</p>
+                </div>
+            </div>
+        </div>
+        <div class="wave"></div>
+    </header>
+    <!-- Fin header -->
+
+
+    <!-- Inicio ventajas de comprar con nosotros Desktop -->
+    <div class="advantages-desktop container mt-5">
+        <h2 class="text-title text-center"><b>Ventajas de comprar con nosotros</b></h2>
+
+        <div class="row mt-5">
+            <div class="col-md-4  d-flex flex-column align-items-center justify-content-center">
+                <img class="d-block" src="./assets/icons/advantages-1.svg" />
+                <span class="d-block mt-2"><b>Asistencia especializada</b> a través de Whatsapp</span>
+            </div>
+
+            <div class="col-md-4 d-flex flex-column align-items-center justify-content-center">
+                <img class="d-block" src="./assets/icons/advantages-2.svg" />
+                <span class="d-block text-center mt-2">Una experiencia <b>segura, personalizada e intuitiva.</b></span>
+            </div>
+
+            <div class="col-md-4 d-flex flex-column align-items-center justify-content-center">
+                <img class="d-block" src="./assets/icons/advantages-3.svg" />
+                <span class="d-block mt-2"><b>Asesoría</b> legal y tributaria telefónica*</span>
+            </div>
+
+            <div class="col-md-4 d-flex flex-column align-items-center mt-5 justify-content-center">
+                <img class="d-block" src="./assets/icons/advantages-4.svg" />
+                <span class="d-block mt-2">Pago de <b>servicios públicos</b></span>
+            </div>
+
+            <div class="col-md-4 d-flex flex-column align-items-center mt-5 justify-content-center">
+                <img class="d-block" src="./assets/icons/advantages-5.svg" />
+                <span class="d-block mt-2"><b>Asistencia</b> domiciliaria</span>
+            </div>
+
+            <div class="col-md-4 d-flex flex-column align-items-center mt-5 justify-content-center">
+                <img class="d-block" src="./assets/icons/advantages-6.svg" />
+                <span class="d-block mt-2">Un proceso 100% digital <b>¡Nada de filas!</b></span>
+            </div>
+        </div>
+    </div>
+    <!-- Fin ventajas de comprar con nosotros -->
+
+
+    <!-- Inicio ventajas de comprar con nosotros Mobile -->
+    <div class="advantages-mobile container mt-5">
+        <h2 class="text-title text-center"><b>Ventajas de comprar con nosotros</b></h2>
+
+        <div class="row mt-5">
+            <div class="col-md-4 col-6  d-flex flex-column align-items-center justify-content-center">
+                <img class="d-block" src="./assets/icons/advantages-mobile-1.svg" />
+                <span class="d-block text-center mt-2"><b>Asistencia especializada</b> a través de Whatsapp</span>
+            </div>
+
+            <div class="col-md-4 col-6 d-flex  flex-column align-items-center justify-content-center">
+                <img class="d-block" src="./assets/icons/advantages-mobile-2.svg" />
+                <span class="d-block text-center mt-2">Una experiencia <b>segura, personalizada e intuitiva.</b></span>
+            </div>
+
+            <div class="col-md-4 col-6 d-flex flex-column align-items-center justify-content-center">
+                <img class="d-block" src="./assets/icons/advantages-mobile-3.svg" />
+                <span class="d-block text-center mt-2"><b>Asesoría</b> legal y tributaria telefónica*</span>
+            </div>
+
+            <div class="col-md-4 col-6 d-flex flex-column align-items-center mt-3 justify-content-center">
+                <img class="d-block" src="./assets/icons/advantages-mobile-4.svg" />
+                <span class="d-block text-center mt-2">Pago de <b>servicios públicos</b></span>
+            </div>
+
+            <div class="col-md-4 col-6 d-flex flex-column align-items-center mt-5 justify-content-center">
+                <img class="d-block" src="./assets/icons/advantages-mobile-5.svg" />
+                <span class="d-block text-center mt-2"><b>Asistencia</b> domiciliaria</span>
+            </div>
+
+            <div class="col-md-4 col-6 d-flex flex-column align-items-center mt-5 justify-content-center">
+                <img class="d-block" src="./assets/icons/advantages-mobile-6.svg" />
+                <span class="d-block text-center mt-2">Un proceso 100% digital <b>¡Nada de filas!</b></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fin ventajas de comprar con nosotros Mobile -->
+
+
+    <!-- Inicio qué cubre tu póliza -->
+    <div class="container mt-5">
+        <div class="row align-items-center">
+            <div class="col-md-5 mt-5">
+                <div class="img-home mt-5">
+                    <img src="./assets/icons/background-home-icon.svg" />
+                    <img class="home-icon" src="./assets/icons/home-icon.svg" />
+                </div>
+            </div>
+
+            <div class="col-md-7">
+                <h2 class="text-title text-center mb-5"><b>¿Qué cubre tu poliza de Arrendamiento?</b></h2>
+
+                <div class="accordion" id="accordion-poliza-1">
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                <b>Canon de arrendamiento</b>
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                            data-bs-parent="#accordion-poliza-1">
+                            <div class="accordion-body">
+                                Ampara el pago de las cuotas de administración ordinarias dejadas. tr de pagar por los
+                                arrendatarios, que se encuentren pactadas en forma clara v expresa en el contrato de
+                                arrendamiento amparado, especificando su valor y el plazo para el pago
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="accordion mt-4" id="accordion-poliza-2">
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <b>Cuota de administración</b>
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Ampara el pago de los cánones o rentas dejados de pagar por los arrendatarios, y los
+                                reajustes pactados en el contrato de arrendamiento debidamente notificados a la
+                                aseguradora.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="accordion mt-4" id="accordion-poliza-3">
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <b>Clausula penal</b>
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Ampara la cláusula penal hasta el límite de 2 veces el canon de arrendamiento vigente,
+                                en el evento en que el arrendatario incumpla sin justa causa la vigencia del contrato.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="accordion mt-4" id="accordion-poliza-4">
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                <b>Pérdida de arrendamiento por daños materiales</b>
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Ampara los cánones de arrendamiento y cuotas de administración dejados de percibir por
+                                el arrendador, en el evento en el que inmueble arrendado sufra daños imprevistos no
+                                imputables al arrendador o al arrendatario.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="accordion mt-4" id="accordion-poliza-5">
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                <b>Daños y faltantes</b>
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Ampara el valor pactado en la caratulo de la póliza, en el evento que se presenten daños
+                                y faltantes en los bienes que se hayan incluido en el inventario inicial del contrato.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- Fin qué cubre tu póliza -->
+
+
+    <!-- Inicio Footer -->
+    <div class="container-fluit footer__container px-2 mt-5">
+        <div class="row align-items-center footer p-4">
+            <div class="col-md-4 col-sm-12 col-12 mt-1 d-flex center">
+                <img class="footer__item--img" src="./assets/icons/footer-icon.svg" alt="">
+                <h6 class="mt-1 mx-2">
+                    <script>
+                        document.write(new Date().getFullYear());
+                    </script> Todos los derechos reservados
+                </h6>
+            </div>
+            <div class="col-md-4 col-sm-12 col-12 text-center">
+                <img src="./assets/icons/icon-vigilado.svg" alt="">
+            </div>
+            <div class="col-md-4 col-sm-12 col-12 text-center">
+                <h6 class="mt-2 mx-2">Nacional 018000 973 031/ Bogotá 307 80 32</h6>
+            </div>
+        </div>
+    </div>
+    <!-- Fin Footer -->
+
+
+
+    <!-- Inicio Modales -->
+
+    <!-- Modal Error-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <img class="icon-alert" src="./assets/icons/modal-icon-warning.svg">
+            <div class="d-flex justify-content-end mt-2 me-2">
+                <img class="icon-close" src="./assets/icons/icon_close.png" data-dismiss="modal" aria-label="Close">
+            </div>
+            <div class="modal-body mt-3">
+                <div class="container mt-5">
+                    <div class="text-center">
+                        <h5 class="text-title"><b>Recibe un acompañamiento personalizado</b></h5>
+                        <span class="card-description">Un asesor se contactará contigo de manera inmediata, por favor digita tu correo para acompañarte en el proceso. </span>
+                    </div>
+                    <form autocomplete="off">
+                        <!-- Input Correo -->
+                        <div class="form-group mt-3">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="document_number"
+                                    placeholder="Correo">
+                                <label class="form-label" for="floatingInput">Correo</label>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="d-flex justify-content-center mt-4 mb-4">
+                        <button class="btn button-success medium-button">Continuar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Fin Modal Error-->
+
+
+
+    <!-- Modal proceso abierto-->
+    <div class="modal fade" id="proceso_abieto" tabindex="-1" role="dialog" aria-labelledby="proceso_abieto" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <img class="icon-alert" src="./assets/icons/modal-icon-warning.svg">
+            <div class="d-flex justify-content-end mt-2 me-2">
+                <img class="icon-close" src="./assets/icons/icon_close.png" data-dismiss="modal" aria-label="Close">
+            </div>
+            <div class="modal-body mt-3">
+                <div class="container mt-5">
+                    <div class="text-center">
+                        <h5 class="text-title"><b>Ya cuentas con un proceso abierto</b></h5>
+                        <span class="card-description">Una vez tu inquilino complete los datos te enviaremos un correo con el contrato para ser firmado y finalizar el proceso de arrendamiento. </span>
+                    </div>
+                    <div class="container mt-4">
+                        <div class="row">
+                            <div class="col-md-6 p-2  alert-grid">
+                                <span class="alert-grid-title">Datos del propietario</span>
+                                <span class="d-block mt-2 alert-grid-name">NOMBRE LARGO APELLIDO1 APELLIDO2</span>
+                                <span class="mt-2 alert-small-letter"><b>Tipo documento: </b>Cédula ciudadanía</span>
+                                <span class="mt-2 alert-small-letter d-block"><b>Tipo documento: </b>Cédula ciudadanía</span>
+                            </div>
+                            <div class="col-md-6 p-2 alert-grid">
+                                <span class="alert-grid-title">Datos de propiedad</span>
+                                <span class="d-block mt-2 alert-grid-name">
+                                    <h2><b>$ 1.300.000</b></h2>
+                                    
+                                </span>
+                                <span class="d-block alert-small-letter-var text-title">Total del canon de arrendamiento</span>
+                                <span class="mt-2 alert-small-letter"><b>Tipo documento: </b>Cédula ciudadanía</span>
+                                <span class="mt-2 alert-small-letter d-block"><b>Tipo documento: </b>Cédula ciudadanía</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center mt-4 mb-4">
+                        <button class="btn  medium-button me-2 button-outline-success" data-toggle="modal" 
+                        data-target="#anular_proceso" data-dismiss="modal" aria-label="Close">Anular</button>
+                        <button class="btn button-success medium-button">Continuar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Fin Modal proceso abierto-->
+
+
+
+    <!-- Modal anular proceso-->
+    <div class="modal fade" id="anular_proceso" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <img class="icon-alert" src="./assets/icons/alert-error-danger.svg">
+            <div class="d-flex justify-content-end mt-2 me-2">
+                <img class="icon-close" src="./assets/icons/icon_close.png" data-dismiss="modal" aria-label="Close">
+            </div>
+            <div class="modal-body mt-3">
+                <div class="container mt-5">
+                    <div class="text-center">
+                        <h5 class="text-title"><b>¿Deseas dar por terminado el proceso?</b></h5>
+                        <span class="card-description">Recuerda que al dar clic en “Anular” el contrato quedará cancelado inmediatamente. </span>
+                    </div>
+                    <div class="d-flex justify-content-center mt-4 mb-4">
+                        <button class="btn button-success medium-button "
+                        data-toggle="modal" 
+                        data-target="#anular_proceso_exito" data-dismiss="modal" aria-label="Close">Anular</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Fin anular proceso-->
+
+
+    <!-- Modal anular proceso Exito-->
+    <div class="modal fade" id="anular_proceso_exito" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <img class="icon-alert" src="./assets/icons/alert-success.svg">
+            <div class="d-flex justify-content-end mt-2 me-2">
+                <img class="icon-close" src="./assets/icons/icon_close.png" data-dismiss="modal" aria-label="Close">
+            </div>
+            <div class="modal-body mt-3 mb-5">
+                <div class="container mt-5">
+                    <div class="text-center">
+                        <h5 class="text-title"><b>El proceso ha sido anulado con éxito</b></h5>
+                        <span class="card-description">Recuerda que si necesitas asesoría puedes comunicarte al numero <b>123456789</b> o al correo <b>ejemplocorreo@gmail.com</b></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Fin anular proceso-->
+
+
+    <!-- modal cod asesor-->
+    <div class="modal fade" id="cod_asesor" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <img class="icon-alert" src="./assets/icons/modal-icon-warning.svg">
+            <div class="d-flex justify-content-end mt-2 me-2">
+                <img class="icon-close" src="./assets/icons/icon_close.png" data-dismiss="modal" aria-label="Close">
+            </div>
+            <div class="modal-body mt-3">
+                <div class="container mt-5">
+                    <div class="text-center">
+                        <h5 class="text-title"><b>¿Recibiste asesoría?</b></h5>
+                        <span class="card-description">Queremos saber si tuviste acompañamiento de alguno de nuestros asesores, si es así por favor digita el nombre o el código en el siguiente campo:</span>
+                    </div>
+                    <form autocomplete="off">
+                        <!-- Input Código o nombre de asesor -->
+                        <div class="form-group mt-3">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" 
+                                    placeholder="Código o nombre de asesor">
+                                <label class="form-label" for="floatingInput">Código o nombre de asesor</label>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="d-flex justify-content-center mt-4 mb-4">
+                        <a href="./calculadora.html" class="btn button-success medium-button">Continuar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Fin modal cod asesor-->
+
+
+    <!-- Fin Modales -->
+
+
+
+    <!-- Scripts -->
+    <script src="./js/sidebar-mobile.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+        crossorigin="anonymous"></script>
+
+    <!-- Validaciones básicas (solo para mostrar estilos de validación)  -->
+    <script>
+
+        //Campos formulario
+
+        let type_document = document.querySelector("#type_document");
+        let document_number = document.querySelector("#document_number");
+        // let location = document.querySelector("#location");
+        let type_property = document.querySelector("#type_property");
+
+        let terms = document.querySelector("#terms");
+        let btn_continue = document.querySelector("#btn_continue");
+
+        let initial_form = document.querySelector("#initial-form");
+
+
+        initial_form.addEventListener("change", () => {
+
+            type_document.addEventListener('click', () => {
+                if (type_document.value === "") {
+                    type_document.classList.add("is-invalid");
+                    type_document.classList.remove("is-valid");
+                } else {
+                    type_document.classList.add("is-valid");
+                    type_document.classList.remove("is-invalid");
+                }
+            });
+
+
+            document_number.addEventListener('click', () => {
+                if (document_number.value === "") {
+                    document_number.classList.add("is-invalid", "floating-invalid");
+                } else if (document_number.value != "") {
+                    document_number.classList.remove("is-invalid", "floating-invalid");
+                    document_number.classList.add("is-valid", "floating-valid");
+                }
+            });
+        });
+
+
+
+
+
+        terms.addEventListener('change', () => {
+            if (terms.checked) {
+                btn_continue.disabled = false;
+            } else {
+                btn_continue.disabled = true;
+            }
+        });
+    </script>
+</body>
+
+</html>
