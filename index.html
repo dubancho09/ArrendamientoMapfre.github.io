@@ -99,42 +99,52 @@
                             <div class="row mt-4">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <!-- Tipo documento -->
-                                        <select id="type_document" class="form-select">
-                                            <option value="0">Tipo de documento</option>
-                                            <option value="1">CC</option>
-                                            <option value="2">TI</option>
-                                        </select>
+                                        <div class="form-floating">
+                                            <!-- Tipo documento -->
+                                            <select id="type_document" class="form-select">
+                                                <option value="0">Selecciona una opción</option>
+                                                <option value="1">CC</option>
+                                                <option value="2">TI</option>
+                                            </select>
+                                            <label class="pt-2">Tipo de documento</label>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group input-container">
                                         <!-- Numero documento -->
-                                        <div class="form-floating form-floating-var mb-3">
+                                        <div class="form-floating  ">
                                             <input type="text" class="form-control" id="document_number"
                                                 placeholder="Número de documento" required>
-                                            <label class="form-label" for="floatingInput">Número de documento</label>
+                                            <label class="form-label pt-2" for="floatingInput">Número de documento</label>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-12 mt-4">
                                     <div class="form-group">
-                                        <!-- Ubicacion propiedad -->
-                                        <select class="form-select" id="location_property" type="text">
-                                            <option value="0">¿Dónde está ubicada la propiedad?</option>
-                                            <option value="1">Ejemplo aqui</option>
-                                            <option value="2">Ejemplo aqui</option>
-                                        </select>
+                                        <div class="form-floating">
+                                            <!-- Ubicacion propiedad -->
+                                            <select class="form-select" id="location_property" type="text">
+                                                <option value="0">Selecciona una opción</option>
+                                                <option value="1">Ejemplo aqui</option>
+                                                <option value="2">Ejemplo aqui</option>
+                                            </select>
+                                            <label class="pt-2">¿Dónde está ubicada la propiedad?</label>
+                                        </div> 
                                     </div>
                                 </div>
                                 <div class="col-md-12 mt-4">
                                     <div class="form-group">
-                                        <!-- Tipo inmueble -->
-                                        <select class="form-select" id="type_property" type="text">
-                                            <option value="">Tipo de inmueble a asegurar</option>
-                                            <option value="1">Ejemplo aqui</option>
-                                            <option value="2">Ejemplo aqui</option>
-                                        </select>
+                                        <div class="form-floating">
+                                            <!-- Tipo inmueble -->
+                                            <select class="form-select" id="type_property" type="text">
+                                                <option value="">Selecciona una opción</option>
+                                                <option value="1">Ejemplo aqui</option>
+                                                <option value="2">Ejemplo aqui</option>
+                                            </select>
+                                            <label class="pt-2">Tipo de inmueble a asegurar</label>
+                                        </div>
+                                        
                                     </div>
                                 </div>
                                 <div class="col-md-12 mt-4">
@@ -176,7 +186,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 mt-3 description-poliza">
-                    <h4 class="text-title">¿Sabes qué es una póliza de arrendamiento?</h4>
+                    <h4 class="text-title"><b>¿Sabes qué es una póliza de arrendamiento?</b></h4>
                     <p>El seguro de arrendamiento individual es un mecanismo de protección al patrimonio, diseñado para
                         amparar al propietario contra el incumplimiento del pago del canon de arrendamiento, la cuota de
                         administración ordinaria y los servicios públicos domiciliarios por parte del inquilino.</p>
@@ -292,7 +302,7 @@
                         <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
                             data-bs-parent="#accordion-poliza-1">
                             <div class="accordion-body">
-                                Ampara el pago de las cuotas de administración ordinarias dejadas. tr de pagar por los
+                                Ampara el pago de las cuotas de administración ordinarias dejadas. de pagar por los
                                 arrendatarios, que se encuentren pactadas en forma clara v expresa en el contrato de
                                 arrendamiento amparado, especificando su valor y el plazo para el pago
                             </div>
@@ -456,33 +466,40 @@
 
     <!-- Modal proceso abierto-->
     <div class="modal fade" id="proceso_abieto" tabindex="-1" role="dialog" aria-labelledby="proceso_abieto" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-dialog modal-dialog-centered proceso_abieto" role="document">
         <div class="modal-content">
             <img class="icon-alert" src="./assets/icons/modal-icon-warning.svg">
-            <div class="d-flex justify-content-end mt-2 me-2">
+            <div class="d-flex justify-content-end mt-3 me-3">
                 <img class="icon-close" src="./assets/icons/icon_close.png" data-dismiss="modal" aria-label="Close">
             </div>
+            
             <div class="modal-body mt-3">
                 <div class="container mt-5">
                     <div class="text-center">
                         <h5 class="text-title"><b>Ya cuentas con un proceso abierto</b></h5>
                         <span class="card-description">Una vez tu inquilino complete los datos te enviaremos un correo con el contrato para ser firmado y finalizar el proceso de arrendamiento. </span>
                     </div>
-                    <div class="container mt-4">
-                        <div class="row">
-                            <div class="col-md-6 p-2  alert-grid">
-                                <span class="alert-grid-title">Datos del propietario</span>
+                    <div class="container modal-description mt-4">
+                        <div class="d-flex flex-wrap justify-content-between">
+                            <div class="p-3  alert-grid ">
+                                <div class="alert-grid-title mt-1">
+                                    <span>Datos del propietario</span>
+                                </div>
                                 <span class="d-block mt-2 alert-grid-name">NOMBRE LARGO APELLIDO1 APELLIDO2</span>
-                                <span class="mt-2 alert-small-letter"><b>Tipo documento: </b>Cédula ciudadanía</span>
-                                <span class="mt-2 alert-small-letter d-block"><b>Tipo documento: </b>Cédula ciudadanía</span>
+                                <div class="mt-4">
+                                    <span class="mt-2 alert-small-letter"><b>Tipo documento: </b>Cédula ciudadanía</span>
+                                    <span class="mt-2 alert-small-letter d-block"><b>Tipo documento: </b>Cédula ciudadanía</span>
+                                </div>
                             </div>
-                            <div class="col-md-6 p-2 alert-grid">
-                                <span class="alert-grid-title">Datos de propiedad</span>
+                            <div class="p-3 alert-grid">
+                                <div class="alert-grid-title">
+                                    <span>Datos de propiedad</span>
+                                </div>
                                 <span class="d-block mt-2 alert-grid-name">
                                     <h2><b>$ 1.300.000</b></h2>
                                     
                                 </span>
-                                <span class="d-block alert-small-letter-var text-title">Total del canon de arrendamiento</span>
+                                <span class="d-block alert-small-letter-var span-top text-title">Total del canon de arrendamiento</span>
                                 <span class="mt-2 alert-small-letter"><b>Tipo documento: </b>Cédula ciudadanía</span>
                                 <span class="mt-2 alert-small-letter d-block"><b>Tipo documento: </b>Cédula ciudadanía</span>
                             </div>

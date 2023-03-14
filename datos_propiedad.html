@@ -129,7 +129,7 @@
                                     <div class="form-floating mb-3">
                                         <input type="date" class="form-control" id="document_number"
                                             placeholder="Valor mensual del arriendo">
-                                        <label class="form-label" for="floatingInput">Inicio de contrato</label>
+                                        <label class="" for="">Inicio de contrato</label>
                                     </div>
                                 </div>
                             </div>
@@ -138,9 +138,8 @@
                                 <div class="form-group">
                                     <div class="form-floating mb-3">
                                         <input type="text" class="form-control" id="document_number"
-                                            placeholder="Valor mensual del arriendo">
-                                        <label class="form-label" for="floatingInput">Valor mensual del
-                                            arriendo</label>
+                                            placeholder="Matrícula">
+                                        <label class="">Matrícula</label>
                                     </div>
                                 </div>
                             </div>
@@ -149,9 +148,8 @@
                                 <div class="form-group">
                                     <div class="form-floating mb-3">
                                         <input type="text" class="form-control" id="document_number"
-                                            placeholder="Valor mensual del arriendo">
-                                        <label class="form-label" for="floatingInput">Valor mensual del
-                                            arriendo</label>
+                                            placeholder="Dirección del inmueble">
+                                        <label class="form-label" for="floatingInput">Dirección del inmueble</label>
                                     </div>
                                 </div>
                             </div>
@@ -159,14 +157,18 @@
                             <div class="col-md-4 mt-2">
                                 <div class="form-group">
                                     <div class="form-group">
-                                        <select id="type_document" class="form-select form-floating-var-2">
-                                            <option value="0">Estrato</option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="2">3</option>
-                                            <option value="2">4</option>
-                                            <option value="2">6</option>
-                                        </select>
+                                        <div class="form-floating">
+                                            <select id="type_document" class="form-select">
+                                                <option value="0">Selecciona una opción</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="2">3</option>
+                                                <option value="2">4</option>
+                                                <option value="2">6</option>
+                                            </select>
+                                            <label class="pb-2">Estrato</label>
+                                        </div>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -174,7 +176,7 @@
                             <!-- Input Barrio -->
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <div class="form-floating mb-3">
+                                    <div class="form-floating mt-2">
                                         <input type="text" class="form-control" id="document_number"
                                             placeholder="Valor mensual del arriendo">
                                         <label class="form-label" for="floatingInput">Barrio</label>
@@ -186,11 +188,15 @@
                             <div class="col-md-4 mt-2">
                                 <div class="form-group">
                                     <div class="form-group">
-                                        <select id="type_document" class="form-select form-floating-var-2">
-                                            <option value="0">Zona de predio</option>
-                                            <option value="1">Ejemplo aqui</option>
-                                            <option value="2">Ejemplo aqui</option>
-                                        </select>
+                                        <div class="form-floating">
+                                            <select id="type_document" class="form-select">
+                                                <option value="0">Selecciona una opción</option>
+                                                <option value="1">Ejemplo aqui</option>
+                                                <option value="2">Ejemplo aqui</option>
+                                            </select>
+                                            <label class="pb-2">Zona de predio</label>
+                                        </div>
+                                        
                                     </div>
                                 </div>
                             </div>

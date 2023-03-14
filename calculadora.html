@@ -103,11 +103,11 @@
                             <span class="mb-2">Meses de vigencia del contrato</span>
 
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-6 col-6">
                                     <button id="btn_months_1" class="btn button-secondary button-max p-2">6
                                         meses</button>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-6 col-6">
                                     <button id="btn_months_2" class="btn button-primary button-max p-2">12
                                         meses</button>
                                 </div>
@@ -146,8 +146,8 @@
                                 <div class="col-md-12 border-bottom">
                                     <div class="alert alert-warning p-3  d-flex align-items-center justify-content-center"
                                         role="alert">
-                                        <b class="me-2 canon-total">$ 1.300.000</b>
-                                        <Span>Total del canon de arrendamiento</Span>
+                                        <b class="canon-total">$1.300.000</b>
+                                        <span class="canon-total-description ms-2">Total del canon de arrendamiento</span>
                                     </div>
                                 </div>
 
@@ -160,11 +160,11 @@
                                             <div class="row">
                                                 <span>Asistencia domiciliaria</span>
                                                 <div class="row mt-2">
-                                                    <div class="col-md-6">
+                                                    <div class="col-md-6 col-6">
                                                         <button id="btn_domi_1"
                                                             class="btn button-secondary button-small">SI</button>
                                                     </div>
-                                                    <div class="col-md-6">
+                                                    <div class="col-md-6 col-6">
                                                         <button id="btn_domi_2"
                                                             class="btn button-primary button-small">NO</button>
                                                     </div>
@@ -173,11 +173,11 @@
                                             <div class="row mt-2">
                                                 <span>Daños y faltantes</span>
                                                 <div class="row ">
-                                                    <div class="col-md-6">
+                                                    <div class="col-md-6 col-6">
                                                         <button id="btn_danios_1"
                                                             class="btn button-secondary button-small">SI</button>
                                                     </div>
-                                                    <div class="col-md-6">
+                                                    <div class="col-md-6 col-6">
                                                         <button id="btn_danios_2"
                                                             class="btn button-primary button-small">NO</button>
                                                     </div>
@@ -191,11 +191,11 @@
                                             <div class="row">
                                                 <span>Pérdida de arrendamiento</span>
                                                 <div class="row mt-2">
-                                                    <div class="col-md-6">
+                                                    <div class="col-md-6 col-6">
                                                         <button id="btn_arrendamiento-1"
                                                             class="btn button-secondary button-small">SI</button>
                                                     </div>
-                                                    <div class="col-md-6">
+                                                    <div class="col-md-6 col-6">
                                                         <button id="btn_arrendamiento-2"
                                                             class="btn button-primary button-small">NO</button>
                                                     </div>
@@ -204,11 +204,11 @@
                                             <div class="row mt-2">
                                                 <span>Claúsula penal</span>
                                                 <div class="row ">
-                                                    <div class="col-md-6">
+                                                    <div class="col-md-6 col-6">
                                                         <button id="btn_clausula-1"
                                                             class="btn button-secondary button-small">SI</button>
                                                     </div>
-                                                    <div class="col-md-6">
+                                                    <div class="col-md-6 col-6">
                                                         <button id="btn_clausula-2"
                                                             class="btn button-primary button-small">NO</button>
                                                     </div>
@@ -237,11 +237,25 @@
                     </div>
                 </div>
 
+                <!-- Inicio Valor total Mobile -->
+                <div class="card mt-3 calculator-total-mobile">
+                    <div class="text-center">
+                        <h5 class="text-title"><b>Este es el valor de tu póliza diseñada a la medida</b></h5>
+                        <p>el precio puede variar si modificas algunos datos</p>
+
+                        <div class="alert alert-danger" role="alert">
+                            <h1 class="text-title"><b>$<span id="total-mobile">0</span></b></h1>
+                            <span class="ms-2">Pesos/ Vigencia total</span>
+                          </div>
+                    </div>
+                </div>
+                <!-- Fin Valor total Mobile -->
+
                 <div class="row justify-content-center mt-5 mb-5">
-                    <div class="col-md-6 d-flex justify-content-center">
+                    <div class="col-md-6 col-6 d-flex justify-content-center">
                         <button id="btn_calcular" class="btn button-success medium-button">Calcular</button>
                     </div>
-                    <div class="col-md-6 d-flex justify-content-center">
+                    <div class="col-md-6 col-6 d-flex justify-content-center">
                         <button id="btn_continue" class="btn button-success medium-button" disabled>Continuar</button>
                     </div>
                 </div>
@@ -352,11 +366,6 @@
    
 
     <script src="./js/main.js"></script>
-
-    
-    
-
-    <script src="./js/sidebar-mobile.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>

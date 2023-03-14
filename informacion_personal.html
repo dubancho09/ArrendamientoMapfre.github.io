@@ -118,14 +118,17 @@
                                 </div>
                             </div>
                             <!-- Select Pais -->
-                            <div class="col-md-4 mt-2">
+                            <div class="col-md-4">
                                 <div class="form-group">
                                     <div class="form-group">
-                                        <select id="type_document" class="form-select form-floating-var-2">
-                                            <option value="0">País de nacimiento</option>
-                                            <option value="1">Colombia</option>
-                                            
-                                        </select>
+                                        <div class="form-floating">
+                                            <select id="type_document" class="form-select ">
+                                                <!-- <option value="0" selected></option>
+                                                <option value="1">Colombia</option> -->
+                                            </select>
+                                            <label class="pt-2">País de nacimiento</label>
+                                        </div>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -205,7 +208,7 @@
 
     <!-- Modal proceso abierto-->
     <div class="modal fade" id="proceso_abieto" tabindex="-1" role="dialog" aria-labelledby="proceso_abieto" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-dialog modal-dialog-centered proceso_abieto" role="document">
         <div class="modal-content">
             <img class="icon-alert" src="./assets/icons/modal-icon-warning.svg">
             <div class="d-flex justify-content-end mt-2 me-2">
@@ -214,33 +217,39 @@
             <div class="modal-body mt-3">
                 <div class="container mt-5">
                     <div class="text-center">
-                        <h5 class="text-title"><b>Por favor confirma tus datos</b></h5>
-                        <span class="card-description">Esta es la información con la que generaremos tu póliza, debes revisarla muy bien antes de continuar.</span>
+                        <h5 class="text-title"><b>Ya cuentas con un proceso abierto</b></h5>
+                        <span class="card-description">Una vez tu inquilino complete los datos te enviaremos un correo con el contrato para ser firmado y finalizar el proceso de arrendamiento. </span>
                     </div>
-                    <div class="container mt-4">
-                        <div class="row">
-                            <div class="col-md-6 p-2  alert-grid">
-                                <span class="alert-grid-title">Datos del propietario</span>
+                    <div class="container modal-description mt-4">
+                        <div class="d-flex flex-wrap justify-content-between">
+                            <div class="p-3  alert-grid ">
+                                <div class="alert-grid-title mt-1">
+                                    <span>Datos del propietario</span>
+                                </div>
                                 <span class="d-block mt-2 alert-grid-name">NOMBRE LARGO APELLIDO1 APELLIDO2</span>
-                                <span class="mt-2 alert-small-letter"><b>Tipo documento: </b>Cédula ciudadanía</span>
-                                <span class="mt-2 alert-small-letter d-block"><b>Tipo documento: </b>Cédula ciudadanía</span>
+                                <div class="mt-4">
+                                    <span class="mt-2 alert-small-letter"><b>Tipo documento: </b>Cédula ciudadanía</span>
+                                    <span class="mt-2 alert-small-letter d-block"><b>Tipo documento: </b>Cédula ciudadanía</span>
+                                </div>
                             </div>
-                            <div class="col-md-6 p-2 alert-grid">
-                                <span class="alert-grid-title">Datos de propiedad</span>
-                                <span class="d-block mt- alert-grid-name">
+                            <div class="p-3 alert-grid">
+                                <div class="alert-grid-title">
+                                    <span>Datos de propiedad</span>
+                                </div>
+                                <span class="d-block mt-2 alert-grid-name">
                                     <h2><b>$ 1.300.000</b></h2>
                                     
                                 </span>
-                                <span class="d-block span-top alert-small-letter-var text-title">Total del canon de arrendamiento</span>
+                                <span class="d-block alert-small-letter-var span-top text-title">Total del canon de arrendamiento</span>
                                 <span class="mt-2 alert-small-letter"><b>Tipo documento: </b>Cédula ciudadanía</span>
                                 <span class="mt-2 alert-small-letter d-block"><b>Tipo documento: </b>Cédula ciudadanía</span>
                             </div>
                         </div>
                     </div>
                     <div class="d-flex justify-content-center mt-4 mb-4">
-                        <button id="btn__getInto" class="btn button-success medium-button" data-dismiss="modal" aria-label="Close"
-                            data-toggle="modal" data-target="#modal__confirmation">
-                            Continuar</button>
+                        <button id="btn__getInto" class="btn button-success medium-button"
+                        data-toggle="modal" 
+                        data-target="#modal__confirmation" data-dismiss="modal" aria-label="Close">Continuar</button>
                     </div>
                 </div>
             </div>

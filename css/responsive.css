@@ -119,6 +119,28 @@
         margin-top: 10px !important;
     }
 
+
+    
+
+
+    .canon-total-description{
+        font-size: 12px;
+    }
+
+
+    .button-small{
+        width: 110% !important;
+    }
+
+
+    .calculator-total{
+        display: none;
+    }
+
+    .calculator-total-mobile{
+        display: block;
+    }
+    
     
 
 

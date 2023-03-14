@@ -147,11 +147,13 @@ btn_danios_2.addEventListener("click", () => {
 
 //Mostrar total(Calculadora)
 const text = document.querySelector("#total");
+const text_1 = document.querySelector("#total-mobile");
 const btn_calcular = document.querySelector("#btn_calcular");
 const btn_continue = document.querySelector("#btn_continue");
 
 btn_calcular.addEventListener("click", () => {
   text.innerHTML = "450.000";
+  text_1.innerHTML = "450.000";
   btn_calcular.disabled = true;
   btn_continue.disabled = false;
 });
