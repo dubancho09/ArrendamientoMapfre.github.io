@@ -56,6 +56,52 @@
         display: none;
     }
 
+
+    .multisteps-form__progress-btn:before {
+        text-indent: 0;
+      }
+
+    .progressbar{
+        margin-top: 20px !important;
+        margin-bottom: 10px !important;
+    }
+
+
+    .alert-document{
+        margin-top: 10px !important;
+    }
+
+
+    .personal-document{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    .alert-valor{
+        border: none;
+    }
+
+
+    #icon-home-02{
+        display: none;
+    }
+
+
+    .card{
+        padding: 20px !important;
+    }
+
+
+    .medium-button{
+        width: 95%;
+    }
+
+
+    .question-section-mobile{
+        margin-top: 40px !important;
+    }
+
     
 
 

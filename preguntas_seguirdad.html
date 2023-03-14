@@ -73,8 +73,8 @@
                 </div>
 
                 <!-- Inicio barra de progreso -->
-                <div class="row d-flex justify-content-start mt-5">
-                    <div class="col-md-12 mb-4 mt-3 ">
+                <div class="row d-flex justify-content-start mt-5 mb-4  progressbar">
+                    <div class="col-md-12 mt-3 ">
                         <div class="multisteps-form__progress">
                             <a class="multisteps-form__progress-btn " href="./index.html" title="Calculadora"
                                 disabled>Calculadora</a>
@@ -93,11 +93,11 @@
 
                 <!-- Inicio documentos personales -->
                 <div class="col-md-12">
-                    <div class="alert alert-danger mt-4" role="alert">
+                    <div class="alert alert-danger mt-4 alert-document" role="alert">
                         <div class="container">
-                            <div class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex justify-content-center align-items-center personal-document">
                                 <div class="d-flex align-items-center  alert-valor">
-                                    <img src="./assets/icons/home-icon-02.svg" alt="">
+                                    <img id="icon-home-02" src="./assets/icons/home-icon-02.svg" alt="">
                                     <h1 class="mt-1 ms-2"><b class="text-title">$100.000</b></h1>
                                     <small class="ms-2 pe-4">Pesos/ Vigencia total</small>
                                 </div>
@@ -122,28 +122,28 @@
                             </div>
 
                             <!-- Inicio Preguntas seguridad -->
-                            <div class="row mt-5 security_questions pb-5">
-                                <div class="col-6">
+                            <div class="row mt-5 security_questions  pb-5">
+                                <div class="col-md-6">
                                     <div class="d-flex flex-column">
                                         <span>1. ¿Realizas transacciones en moneda extranjera? o ¿posees productos financieros en el exterior?</span>
                                         <div class="d-flex justify-content-between mt-2">
-                                            <button id="btn_transacciones_1" class="btn medium-button-var button-secondary">Si</button>
+                                            <button id="btn_transacciones_1" class="btn medium-button-var button-secondary me-1">Si</button>
                                             <button id="btn_transacciones_2" class="btn medium-button-var button-primary">No</button>
                                         </div>
                                     </div>
                                     <div class="d-flex flex-column mt-4">
                                         <span>3. ¿Eres una persona con reconocida influencia pública o política? ¿Tienes algún familiar que lo sea?</span>
                                         <div class="d-flex justify-content-between mt-2">
-                                            <button id="btn_influencia_1" class="btn medium-button-var button-secondary">Si</button>
+                                            <button id="btn_influencia_1" class="btn medium-button-var button-secondary me-1">Si</button>
                                             <button id="btn_influencia_2" class="btn medium-button-var button-primary">No</button>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-md-6 question-section-mobile">
                                     <div class="d-flex flex-column">
                                         <span class="mb-4">2. ¿Eres representante legal de una organización en el exterior?</span>
                                         <div class="d-flex justify-content-between mt-2">
-                                            <button id="btn_representante_1" class="btn medium-button-var button-secondary">Si</button>
+                                            <button id="btn_representante_1" class="btn medium-button-var button-secondary me-1">Si</button>
                                             <button id="btn_representante_2" class="btn medium-button-var button-primary">No</button>
                                         </div>
                                     </div>
@@ -151,7 +151,7 @@
                                     <div class="d-flex flex-column mt-4">
                                         <span>4. ¿Manejas recursos públicos? ¿Ejerces algún grado de orden público? ¿Tienes algún familiar que lo haga?</span>
                                         <div class="d-flex justify-content-between mt-2">
-                                            <button id="btn_recursos_1" class="btn medium-button-var button-secondary">Si</button>
+                                            <button id="btn_recursos_1" class="btn medium-button-var button-secondary me-1">Si</button>
                                             <button id="btn_recursos_2" class="btn medium-button-var button-primary">No</button>
                                         </div>
                                     </div>
