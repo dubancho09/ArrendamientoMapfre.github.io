@@ -554,6 +554,7 @@ a{
 
   .alert-grid{
       background-color: #F7F7F7;
+      width: 48%;
   }
 
   .alert-grid-title{
@@ -582,6 +583,9 @@ a{
     font-weight: bold;
     text-align: center;
 }
+
+
+
 
 
 .modal__time--minutes {
