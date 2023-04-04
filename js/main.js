@@ -79,71 +79,7 @@ btn_domi_2.addEventListener("click", () => {
   }
 });
 
-btn_arren_1.addEventListener("click", () => {
-  change_color(btn_arren_1, btn_arren_2);
 
-  if (btn_calcular.disabled == true) {
-    btn_calcular.disabled = false;
-    btn_continue.disabled = true;
-  } else {
-    return;
-  }
-});
-
-btn_arren_2.addEventListener("click", () => {
-  change_color(btn_arren_1, btn_arren_2);
-
-  if (btn_calcular.disabled == true) {
-    btn_calcular.disabled = false;
-    btn_continue.disabled = true;
-  } else {
-    return;
-  }
-});
-
-btn_clausula_1.addEventListener("click", () => {
-  change_color(btn_clausula_1, btn_clausula_2);
-
-  if (btn_calcular.disabled == true) {
-    btn_calcular.disabled = false;
-    btn_continue.disabled = true;
-  } else {
-    return;
-  }
-});
-
-btn_clausula_2.addEventListener("click", () => {
-  change_color(btn_clausula_1, btn_clausula_2);
-
-  if (btn_calcular.disabled == true) {
-    btn_calcular.disabled = false;
-    btn_continue.disabled = true;
-  } else {
-    return;
-  }
-});
-
-btn_danios_1.addEventListener("click", () => {
-  change_color(btn_danios_1, btn_danios_2);
-
-  if (btn_calcular.disabled == true) {
-    btn_calcular.disabled = false;
-    btn_continue.disabled = true;
-  } else {
-    return;
-  }
-});
-
-btn_danios_2.addEventListener("click", () => {
-  change_color(btn_danios_1, btn_danios_2);
-
-  if (btn_calcular.disabled == true) {
-    btn_calcular.disabled = false;
-    btn_continue.disabled = true;
-  } else {
-    return;
-  }
-});
 
 //Mostrar total(Calculadora)
 const text = document.querySelector("#total");

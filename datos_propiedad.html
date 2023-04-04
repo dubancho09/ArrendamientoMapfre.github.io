@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
 
-    <title>Arrendamiento - Calculadora</title>
+    <title>Arrendamiento - Propiedad</title>
 </head>
 
 <body class="calculator-page">
@@ -91,7 +91,7 @@
                 </div>
                 <!-- Fin barra de progreso -->
 
-                <!-- Inicio documentos personal -->
+                <!-- Inicio datos información -->
                 <div class="col-md-12">
                     <div class="alert alert-danger alert-document mt-4" role="alert">
                         <div class="container">
@@ -102,15 +102,15 @@
                                     <small class="ms-2 pe-4">Pesos/ Vigencia total</small>
                                 </div>
                                 <div class="d-flex flex-column align-items-start ms-4">
-                                    <span class="d-block"><b class="me-2">Tipo de documento:</b>Cédula de
-                                        ciudadanía</span>
-                                    <span class="d-block"><b class="me-2">Número documento:</b>1061781708</span>
+                                    <span class="d-block"><b class="me-2">Zona:</b>Ejemplo aqui</span>
+                                    <span class="d-block"><b class="me-2">Ciudad:</b>Bogotá</span>
+                                    <span class="d-block"><b class="me-2">Tipo de propiedad:</b>Residencial</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Fin documentos personal -->
+                <!-- Fin datos información -->
 
 
                 <!-- Inicio formulario datos de la propiedad -->
@@ -143,40 +143,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- Input direccion de inmueble -->
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <div class="form-floating mb-3">
-                                        <input type="text" class="form-control" id="document_number"
-                                            placeholder="Dirección del inmueble">
-                                        <label class="form-label" for="floatingInput">Dirección del inmueble</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Select estrato -->
-                            <div class="col-md-4 mt-2">
-                                <div class="form-group">
-                                    <div class="form-group">
-                                        <div class="form-floating">
-                                            <select id="type_document" class="form-select">
-                                                <option value="0">Selecciona una opción</option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="2">3</option>
-                                                <option value="2">4</option>
-                                                <option value="2">6</option>
-                                            </select>
-                                            <label class="pb-2">Estrato</label>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
 
                             <!-- Input Barrio -->
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <div class="form-floating mt-2">
+                                    <div class="form-floating">
                                         <input type="text" class="form-control" id="document_number"
                                             placeholder="Valor mensual del arriendo">
                                         <label class="form-label" for="floatingInput">Barrio</label>
@@ -184,8 +155,59 @@
                                 </div>
                             </div>
 
-                            <!-- Select estrato -->
-                            <div class="col-md-4 mt-2">
+                            <!-- Input direccion de inmueble -->
+                            <div class="col-md-6 mt-2">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <div class="form-floating">
+                                              <!-- calle -->
+                                              <select id="type_document" class="form-select">
+                                                <option value="1">Calle</option>
+                                                <option value="2">Lorem</option>
+                                              </select>
+                                              <label class="pt-2">Dirección</label>
+                                            </div>
+                                          </div>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <div class="form-floating">
+                                              <!-- Nro -->
+                                              <select  class="form-select">
+                                                <option value="1">12N</option>
+                                                <option value="2">Lorem</option>
+                                              </select>
+                                            </div>
+                                          </div>
+                                    </div>
+
+                                    <div class="col-md-2">
+                                        <div class="form-group">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control text-center"
+                                                    value="#" disabled>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <div class="form-floating">
+                                              <!-- Nro -->
+                                              <select  class="form-select">
+                                                <option value="1">78A-15</option>
+                                                <option value="2">Lorem</option>
+                                              </select>
+                                            </div>
+                                          </div>
+                                    </div>  
+                                </div>
+                            </div>
+                            
+                            <!-- Select localidad -->
+                            <div class="col-md-6 mt-2">
                                 <div class="form-group">
                                     <div class="form-group">
                                         <div class="form-floating">
@@ -194,7 +216,7 @@
                                                 <option value="1">Ejemplo aqui</option>
                                                 <option value="2">Ejemplo aqui</option>
                                             </select>
-                                            <label class="pb-2">Zona de predio</label>
+                                            <label class="pb-2">Localidad</label>
                                         </div>
 
                                     </div>

@@ -232,6 +232,13 @@ a{
     box-shadow: none;
 }
 
+.form-floating .form-control:disabled{
+    background-color: transparent !important;
+    text-align: center !important;
+    padding-bottom: 0px !important;
+    padding-left: 11px !important;
+}
+
 .form-group label {
     color: #8C8C8C;
     position: absolute;
@@ -452,6 +459,15 @@ a{
 
 }
 
+
+
+.form-floating .form-select{
+    background-position: right 10px bottom 30% !important;
+}
+
+
+
+
 .multisteps-form__progress-btn:after{
     position: absolute;
   top: 15px;
@@ -626,6 +642,17 @@ a{
     font-weight: bold;
     font-size: 28px;
 }
+
+#form_asesor{
+    display: none;
+}
+
+.alert-danger p{
+    color: #363636 !important;
+}
+
+
+
 
 /*Estilos footer*/
 

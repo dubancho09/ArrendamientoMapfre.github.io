@@ -147,5 +147,13 @@
         text-align: center;
     }
 
+    .buttons-optios-mobile{
+        flex-direction: column !important;
+    }
+
+    .buttons-optios-mobile button{
+        margin-bottom: 15px !important;
+    }
+
 
 }
