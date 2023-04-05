@@ -24,6 +24,22 @@ a{
     text-decoration: none;
 }
 
+
+.background-page{
+    background-color: #F3F3F3;
+    background-image: url("../assets/img/Ellipse.svg");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+
+.card-shadow{
+    -webkit-box-shadow: 5px 6px 5px 0px rgba(216,216,216,1);
+    -moz-box-shadow: 5px 6px 5px 0px rgba(216,216,216,1);
+    box-shadow: 5px 6px 5px 0px rgba(216,216,216,1);
+}
+
+
+
 /* Estilos navbar */
 .colorhead {
     background-color: #fff;

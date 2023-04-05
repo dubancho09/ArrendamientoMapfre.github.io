@@ -19,7 +19,7 @@
     <title>Arrendamiento - Preguntas Seguridad</title>
 </head>
 
-<body class="calculator-page">
+<body class="background-page">
     <!-- Inicio navbar desktop -->
     <div class="container-fluit">
         <nav class="navbar  navbar-light colorhead navbar-desktop ">
@@ -88,137 +88,125 @@
                 </div>
                 <!-- Fin barra de progreso -->
 
-                <!-- Inicio documentos personales -->
-                <div class="col-md-12">
-                    <div class="alert alert-danger mt-4 alert-document" role="alert">
-                        <div class="container">
-                            <div class="d-flex justify-content-center align-items-center personal-document">
-                                <div class="d-flex align-items-center  alert-valor">
-                                    <img id="icon-home-02" src="./assets/icons/home-icon-02.svg" alt="">
-                                    <h1 class="mt-1 ms-2"><b class="text-title">$100.000</b></h1>
-                                    <small class="ms-2 pe-4">Pesos/ Vigencia total</small>
-                                </div>
-                                <div class="d-flex flex-column align-items-start ms-4">
-                                    <span class="d-block"><b class="me-2">Tipo de documento:</b>Cédula de
-                                        ciudadanía</span>
-                                    <span class="d-block"><b class="me-2">Número documento:</b>1061781708</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Fin documentos personales -->
+
 
                 <!-- Inicio Preguntas seguridad -->
-                <div class="row mt-5 security_questions  pb-5">
-                    <div class="col-md-6">
-                        <div class="d-flex flex-column">
-                            <span>1. ¿Realizas transacciones en moneda extranjera? o ¿posees productos financieros en el
-                                exterior?</span>
-                            <div class="d-flex  mt-2">
-                                <button id="btn_transacciones_1"
-                                    class="btn medium-button-var button-secondary me-3">Si</button>
-                                <button id="btn_transacciones_2"
-                                    class="btn medium-button-var button-primary">No</button>
+                <div class="card card-shadow p-5">
+                    <div class="row mt-5  pb-5">
+
+                        <div class="col-md-6">
+                            <div class="d-flex flex-column">
+                                <span>1. ¿Realizas transacciones en moneda extranjera? o ¿posees productos financieros
+                                    en el
+                                    exterior?</span>
+                                <div class="d-flex  mt-2">
+                                    <button id="btn_transacciones_1"
+                                        class="btn medium-button-var button-secondary me-3">Si</button>
+                                    <button id="btn_transacciones_2"
+                                        class="btn medium-button-var button-primary">No</button>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column mt-4">
+                                <span>3. ¿Eres una persona con reconocida influencia pública o política? ¿Tienes algún
+                                    familiar que lo sea?</span>
+                                <div class="d-flex  mt-2">
+                                    <button id="btn_influencia_1"
+                                        class="btn medium-button-var button-secondary me-3">Si</button>
+                                    <button id="btn_influencia_2"
+                                        class="btn medium-button-var button-primary">No</button>
+                                </div>
                             </div>
                         </div>
-                        <div class="d-flex flex-column mt-4">
-                            <span>3. ¿Eres una persona con reconocida influencia pública o política? ¿Tienes algún
-                                familiar que lo sea?</span>
-                            <div class="d-flex  mt-2">
-                                <button id="btn_influencia_1"
-                                    class="btn medium-button-var button-secondary me-3">Si</button>
-                                <button id="btn_influencia_2" class="btn medium-button-var button-primary">No</button>
+                        <div class="col-md-6 question-section-mobile">
+                            <div class="d-flex flex-column">
+                                <span class="mb-4">2. ¿Eres representante legal de una organización en el
+                                    exterior?</span>
+                                <div class="d-flex  mt-2">
+                                    <button id="btn_representante_1"
+                                        class="btn medium-button-var button-secondary me-3">Si</button>
+                                    <button id="btn_representante_2"
+                                        class="btn medium-button-var button-primary">No</button>
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-column mt-4">
+                                <span>4. ¿Manejas recursos públicos? ¿Ejerces algún grado de orden público? ¿Tienes
+                                    algún
+                                    familiar que lo haga?</span>
+                                <div class="d-flex  mt-2">
+                                    <button id="btn_recursos_1"
+                                        class="btn medium-button-var button-secondary me-3">Si</button>
+                                    <button id="btn_recursos_2" class="btn medium-button-var button-primary">No</button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 question-section-mobile">
-                        <div class="d-flex flex-column">
-                            <span class="mb-4">2. ¿Eres representante legal de una organización en el exterior?</span>
-                            <div class="d-flex  mt-2">
-                                <button id="btn_representante_1"
-                                    class="btn medium-button-var button-secondary me-3">Si</button>
-                                <button id="btn_representante_2"
-                                    class="btn medium-button-var button-primary">No</button>
-                            </div>
+
+
+                    <div class="row mt-3">
+                        <div class="col-md-12">
+                            <form class="row">
+                                <!--Select Ciudad de residencia -->
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <div class="form-floating">
+                                            <select class="form-select is-valid">
+                                                <option>Bogotá</option>
+                                            </select>
+                                            <label class="pt-2">Ciudad de residencia</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--Select Actividad económica -->
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <div class="form-floating">
+                                            <select class="form-select is-valid">
+                                                <option>Independiente</option>
+                                            </select>
+                                            <label class="pt-2">Actividad económica</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--Select Profesión u ocupación -->
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <div class="form-floating">
+                                            <select class="form-select is-valid">
+                                                <option>Diseñador</option>
+                                            </select>
+                                            <label class="pt-2">Profesión u ocupación</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--Input Ciudad de expedición de documento -->
+                                <div class="col-md-6 mt-4">
+                                    <div class="form-group">
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control is-valid floating-valid"
+                                                placeholder="Ciudad de expedición de documento" value="Bogotá">
+                                            <label class="form-label" for="floatingInput">Ciudad de expedición de
+                                                documento</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--Input Ciudad de expedición de documento -->
+                                <div class="col-md-6 mt-4">
+                                    <div class="form-group">
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control is-valid floating-valid"
+                                                placeholder="Ciudad de expedición de documento" value="2013">
+                                            <label class="form-label" for="floatingInput">Fecha de expedición de
+                                                documento</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
-
-                        <div class="d-flex flex-column mt-4">
-                            <span>4. ¿Manejas recursos públicos? ¿Ejerces algún grado de orden público? ¿Tienes algún
-                                familiar que lo haga?</span>
-                            <div class="d-flex  mt-2">
-                                <button id="btn_recursos_1"
-                                    class="btn medium-button-var button-secondary me-3">Si</button>
-                                <button id="btn_recursos_2" class="btn medium-button-var button-primary">No</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="row mt-3">
-                    <div class="col-md-12">
-                        <form class="row">
-                            <!--Select Ciudad de residencia -->
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <div class="form-floating">
-                                        <select class="form-select is-valid">
-                                            <option>Bogotá</option>
-                                        </select>
-                                        <label class="pt-2">Ciudad de residencia</label>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!--Select Actividad económica -->
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <div class="form-floating">
-                                        <select class="form-select is-valid">
-                                            <option>Independiente</option>
-                                        </select>
-                                        <label class="pt-2">Actividad económica</label>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!--Select Profesión u ocupación -->
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <div class="form-floating">
-                                        <select class="form-select is-valid">
-                                            <option>Diseñador</option>
-                                        </select>
-                                        <label class="pt-2">Profesión u ocupación</label>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!--Input Ciudad de expedición de documento -->
-                            <div class="col-md-6 mt-4">
-                                <div class="form-group">
-                                    <div class="form-floating mb-3">
-                                        <input type="text" class="form-control is-valid floating-valid"
-                                            placeholder="Ciudad de expedición de documento" value="Bogotá">
-                                        <label class="form-label" for="floatingInput">Ciudad de expedición de
-                                            documento</label>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!--Input Ciudad de expedición de documento -->
-                            <div class="col-md-6 mt-4">
-                                <div class="form-group">
-                                    <div class="form-floating mb-3">
-                                        <input type="text" class="form-control is-valid floating-valid"
-                                            placeholder="Ciudad de expedición de documento" value="2013">
-                                        <label class="form-label" for="floatingInput">Fecha de expedición de
-                                            documento</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
                     </div>
                 </div>
                 <!-- Fin Preguntas seguridad -->
@@ -232,7 +220,7 @@
     <div class="container">
         <div class="row mt-5 mb-5">
             <div class="col-md-12">
-                <div class="card p-5">
+                <div class="card card-shadow p-5">
                     <div class="text-center">
                         <h4 class="text-title"><b>Datos financieros</b></h4>
                     </div>
@@ -364,19 +352,28 @@
                         <div class="text-center">
                             <h5 class="text-title"><b>¡Hemos recibido la firma digital!</b></h5>
                             <span class="card-description">
-                                El siguiente paso será realizar el pago de la póliza por parte del propietario para luego enviarte al correo el contrato aprobado. En caso de que tengas alguna duda.
+                                El siguiente paso será realizar el pago de la póliza por parte del propietario para
+                                luego enviarte al correo el contrato aprobado. En caso de que tengas alguna duda.
                             </span>
                         </div>
 
                         <div class="information">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, soluta voluptate. Temporibus enim repellat alias officiis laboriosam cumque laborum quis quos molestias, magni suscipit amet expedita error at soluta consequuntur aliquam tempora doloribus placeat nam deleniti sed earum, adipisci illo! Quisquam praesentium nulla eius perspiciatis maiores reiciendis provident ipsam libero, odit in repellendus sequi sit et nesciunt! Dolores laboriosam id magni voluptatem facere corporis! Laborum suscipit, cum et provident obcaecati harum nulla minus error corporis tempora reprehenderit numquam excepturi inventore, omnis dolore, beatae hic voluptatum! Aut quibusdam architecto vitae autem pariatur tempora, aperiam nulla! Accusantium, mollitia. Molestias vero quasi rem!</p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, soluta voluptate.
+                                Temporibus enim repellat alias officiis laboriosam cumque laborum quis quos molestias,
+                                magni suscipit amet expedita error at soluta consequuntur aliquam tempora doloribus
+                                placeat nam deleniti sed earum, adipisci illo! Quisquam praesentium nulla eius
+                                perspiciatis maiores reiciendis provident ipsam libero, odit in repellendus sequi sit et
+                                nesciunt! Dolores laboriosam id magni voluptatem facere corporis! Laborum suscipit, cum
+                                et provident obcaecati harum nulla minus error corporis tempora reprehenderit numquam
+                                excepturi inventore, omnis dolore, beatae hic voluptatum! Aut quibusdam architecto vitae
+                                autem pariatur tempora, aperiam nulla! Accusantium, mollitia. Molestias vero quasi rem!
+                            </p>
                         </div>
                     </div>
 
                     <!-- Boton Aceptar -->
                     <div class="d-flex justify-content-center">
-                        <a href="./index.html" class="btn button-success medium-button" data-dismiss="modal"
-                            aria-label="Close">Aceptar</a>
+                        <a href="./index.html" class="btn button-success medium-button">Aceptar</a>
                     </div>
                 </div>
             </div>
@@ -384,18 +381,18 @@
     </div>
     <!-- Fin Datos confirmados-->
 
-        <!-- Scripts -->
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
-            integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
-            crossorigin="anonymous"></script>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+        crossorigin="anonymous"></script>
 
-        <script src="./js/botones_datos_seguridad.js"></script>
+    <script src="./js/botones_datos_seguridad.js"></script>
 </body>
 
 </html>
