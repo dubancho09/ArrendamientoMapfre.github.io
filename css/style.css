@@ -5,6 +5,7 @@
 
 body{
     counter-reset: step;
+    
 }
 
 .text-title {
@@ -314,6 +315,12 @@ a{
     border-radius: 2px;
 }
 
+.button-small-var-1{
+    width: 110px;
+    height: 40px;
+    border-radius: 2px;
+}
+
 .medium-button{
     width: 300px;
     height: 45px !important;
@@ -358,7 +365,6 @@ a{
     text-decoration: none;
     font-style: italic;
     font-size: 14px;
-    border-bottom: 1px solid #ccc;
 }
 
 
@@ -545,6 +551,10 @@ a{
     margin-top: -14px;
 }
 
+.card{
+    background: white !important;
+}
+
   .modal-items{
       font-size: 14px;
       color: #D81E04;
@@ -654,15 +664,19 @@ a{
     color: #363636 !important;
 }
 
-::-webkit-scrollbar {
+.information::-webkit-scrollbar {
     width: 8px;
     height: 5px;
     background-color: transparent;
   }
 
-::-webkit-scrollbar-thumb {
+  .information::-webkit-scrollbar-thumb {
     border-radius: 10px !important;
   }
+
+.ingresos_adicionales{
+    width: 60%;
+}
 
 
 
@@ -687,6 +701,10 @@ a{
     border-radius: 10px;
   }
 
+.inquilino-datos{
+    width: 50%;
+    text-align: start;
+}
 
 
 
